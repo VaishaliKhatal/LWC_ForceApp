@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Cities">
+        <lightning-input type="checkbox" label="Show Cities" onchange={showCitiesHandler}></lightning-input>
+
+        <template if:true={showdiv}>
+            <div>
+                <ul>
+                 <template for:each={cityList} for:item="city">
+                     <li key={city}>{city}</li>
+                </template>
+            </ul>
+            </div>
+            <div>
+                <p> Using Iterator directive</p>
+                <ul>
+                 <template iterator:itr={cityList}  >
+                     <li key={itr.value}>{itr.value}  {itr.index} {itr.first}  {itr.last} </li>
+                </template>
+            </ul>
+            </div>
+        </template>
+</lightning-card>
+</template>

@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="List Of Todos">
+        <ul style="background-color: antiquewhite;color: brown;">
+            <template for:each={todos} for:item="todo">
+                <!-- show-todo will set this property to true -->
+                <li key={todo}  style="padding: 10px;"> 
+                    <c-todo-item item-name={todo} show-todo > 
+                         <p slot="para2">This data will go to Para2 </p>
+                         <div slot="div1"> disply in slot - div1 </div>
+                         <p slot="para1">This will be rendered by para1 slot </p>
+                         <p>Some addional text </p>
+                    </c-todo-item>    
+                 </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

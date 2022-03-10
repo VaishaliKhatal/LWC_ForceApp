@@ -1,0 +1,19 @@
+<template>
+    <template if:true={showTodo}>
+        <lightning-tile label='Todo Item'>
+            <span>{itemName}</span>
+
+             <!-- Slots - placeholder for additonal markups comming from Parent -->
+             <!-- named slot -->
+            <slot name="para1" style="color: blue;"></slot>
+            <slot name="div1"></slot>
+            <slot name="para2" style="color: chartreuse;"></slot>
+           <!-- Un named slots recomended to have at max one unnamed slot  -->
+            <slot></slot>
+            <!-- <slot></slot>
+            <slot></slot>
+            <slot></slot> -->
+        </lightning-tile>
+
+    </template>
+</template>

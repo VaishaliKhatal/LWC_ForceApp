@@ -1,0 +1,9 @@
+img{
+    border: 3px gray;
+    border-radius: 50%;
+}
+/* apply style to template */
+:host{
+    color: brown;
+    font-weight: 200;
+}

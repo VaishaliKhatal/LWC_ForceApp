@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Select Checkbox">
+        <lightning-input value={value} label="Enter Marker color "
+        onchange={onChangeHandler}></lightning-input>
+        <lightning-button label="Select Marker" onclick={onClickHandler}></lightning-button>
+        <div>This Parent's Div value of Marker {value}</div>
+        <c-publi-method-child></c-publi-method-child>
+    </lightning-card>
+</template>

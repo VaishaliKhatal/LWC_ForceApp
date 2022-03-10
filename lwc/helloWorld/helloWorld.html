@@ -1,0 +1,16 @@
+<template>
+  <!-- View -->
+    <lightning-card>
+        <p> Hello World! </p>
+        <img src={profileImg}>
+        <p> Message : {message}</p>
+        <p>{cities}</p>
+        <!-- binding message property -->
+        <lightning-input label="Message" value={message} onchange={changeHandler} ></lightning-input>
+        <lightning-input label="City" value={city} onchange={addCityHandler}></lightning-input>
+        <lightning-button label="AddCity" onclick={addCity}></lightning-button>
+
+    </lightning-card>
+ 
+
+</template>
